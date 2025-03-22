@@ -1,0 +1,68 @@
+# CLI Tools & Utilities
+brew "bat"
+brew "eza"
+brew "fzf"
+brew "grep"
+brew "neofetch"
+brew "ripgrep"
+brew "sl"
+brew "starship"
+
+# Programming Languages & Development Tools
+brew "go"
+brew "nvm"  # Node version manager
+brew "python"
+brew "rust"
+
+# Terminal
+cask "ghostty"
+
+# Development Applications
+cask "cursor"
+cask "insomnia"
+cask "lm-studio"
+cask "postico"
+
+# Productivity & Utilities
+cask "alt-tab"
+cask "bitwarden"
+cask "coteditor"
+cask "domzilla-caffeine"
+cask "fluor"
+cask "jordanbaird-ice"
+cask "keycastr"
+cask "notchnook"
+cask "pictogram"
+cask "raycast"
+cask "rectangle"
+cask "scroll-reverser"
+cask "shottr"
+cask "swiftdefaultappsprefpane"
+
+# Media & Entertainment
+cask "discord"
+cask "gyroflow"
+cask "handbrake"
+cask "iina"
+cask "slack"
+
+# Browsers
+cask "orion"
+cask "google-chrome"
+
+# Hardware and peripherals
+cask "logi-options+"
+
+# Fonts
+cask "font-fira-code"
+cask "font-fira-code-nerd-font"
+cask "font-hack-nerd-font"
+cask "font-inter"
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-ibm-plex"
+cask "font-source-code-pro"
+cask "font-cascadia-code"
+cask "font-cascadia-code-pl"
+cask "font-roboto"
+cask "font-open-sans" 

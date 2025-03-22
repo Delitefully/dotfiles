@@ -1,0 +1,55 @@
+[user]
+    name = Gabriel
+    email = gabriel@delitefully.com
+
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+    pager = less -FRX
+    whitespace = trailing-space,space-before-tab
+
+[init]
+    defaultBranch = master
+
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+
+[push]
+    default = simple
+    followTags = true
+
+[pull]
+    rebase = true
+
+[fetch]
+    prune = true
+
+[diff]
+    tool = vimdiff
+    colorMoved = default
+
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+    ff = only
+
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    amend = commit --amend
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    visual = !gitk
+    staged = diff --staged
+    current = !git symbolic-ref --short HEAD
+    branches = branch -a
+    remotes = remote -v
+    tags = tag -l
