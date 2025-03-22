@@ -50,7 +50,7 @@ cask "slack"
 cask "orion"
 cask "google-chrome"
 
-# Hardware and peripherals
+# Hardware and Peripherals
 cask "logi-options+"
 
 # Fonts

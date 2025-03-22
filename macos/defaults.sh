@@ -37,6 +37,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Disable boot sound
 sudo nvram SystemAudioVolume=" "
 
+echo "General UI/UX settings applied."
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -64,6 +65,7 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 20
 
+echo "Trackpad, mouse, keyboard, Bluetooth accessories, and input settings applied."
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
@@ -96,6 +98,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Use list view in all Finder windows by default
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
+echo "Finder settings applied."
 ###############################################################################
 # Dock and Dashboard                                                          #
 ###############################################################################
@@ -116,13 +119,10 @@ defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock autohide-time-modifier -float 0.3
 defaults write com.apple.dock autohide-delay -float 0
 
-# Add a context menu item for showing the Web Inspector in web views
-defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
-
-
+echo "Dock and Dashboard settings applied."
 
 # Restart affected applications
-for app in "Finder" "Dock" "Safari" "SystemUIServer"; do
+for app in "Finder" "Dock"; do
   killall "${app}" &> /dev/null
 done
 

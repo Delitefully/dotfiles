@@ -1,0 +1,47 @@
+# Ghostty configuration file
+
+# Theme
+background-opacity = 0.8
+background-blur = 30
+theme = tokyonight
+window-title-font-family = JetBrains Mono
+
+# General options
+cursor-style = block
+cursor-style-blink = true
+confirm-close-surface = false
+shell-integration-features = no-cursor,sudo,no-title
+
+# Macos options
+macos-option-as-alt = true
+macos-titlebar-style = tabs 
+mouse-hide-while-typing = true
+
+
+# Font configuration
+font-family = JetBrains Mono
+font-size = 14
+font-feature = calt
+font-feature = liga
+font-feature = 
+
+
+
+# Keyboard shortcuts
+keybind = cmd+s>r=reload_config
+keybind = cmd+s>x=close_surface
+
+
+# tabs 
+keybind = cmd+s>c=new_tab
+keybind = cmd+s>shift+l=next_tab
+keybind = cmd+s>shift+h=previous_tab
+keybind = cmd+s>comma=move_tab:-1
+keybind = cmd+s>period=move_tab:1
+
+# split
+keybind = cmd+s>\=new_split:right
+keybind = cmd+s>-=new_split:down
+
+# clipboard
+clipboard-trim-trailing-spaces = true
